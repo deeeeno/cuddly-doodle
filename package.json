@@ -1,0 +1,23 @@
+{
+  "name": "cuddly-doodle",
+  "version": "1.0.0",
+  "description": "이 레포지토리는 TypeScript 공부하며 진행하는 토이프로젝트 레포지토리 입니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deeeeno/cuddly-doodle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deeeeno/cuddly-doodle/issues"
+  },
+  "homepage": "https://github.com/deeeeno/cuddly-doodle#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
