@@ -30,7 +30,7 @@ anyTest({c:1});
 anyTest({a:1});
 
 function objectTest(obj:object){
-    console.log(obj.a);
+    // console.log(obj.a);
 }
 objectTest({c:1});
 objectTest({a:1});
@@ -40,6 +40,14 @@ objectTest({a:1});
 function print(msg:string):void{
     console.log(msg);
 }
-function neverTest():never{
 
-}
+let a = "string";
+console.log(typeof a);
+let b:string = "string";
+console.log(typeof b);
+
+const dino : {
+	name:string;
+	age?:number;
+} = {name:'dino'};
+console.log(dino.name);
