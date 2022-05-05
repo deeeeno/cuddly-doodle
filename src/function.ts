@@ -19,3 +19,21 @@ type Encode = {
 const encode:Encode = (message,encode:string = 'utf-8')=>{
     console.log(message, encode);
 };
+
+type ArrayPrint = <T>(arr:T[]) =>void;
+// type ArrayPrint = (arr:any[]) =>void;
+
+const arrayPrint:ArrayPrint = (arr)=>{
+	arr.forEach(ele=>console.log(ele));
+};
+arrayPrint([1,2,3]);
+arrayPrint(['a','b','c']);
+arrayPrint([1,2,true,'a']);
+
+type anyTest = (arr:any[]) =>any;
+const testfunc:anyTest = (arr)=>{
+	return arr.reduce((acc,val)=>{
+		return acc+val;
+	},0);
+};
+const tt:number = testfunc([1,2,3]);
