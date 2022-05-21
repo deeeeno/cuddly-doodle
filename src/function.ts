@@ -37,3 +37,29 @@ const testfunc:anyTest = (arr)=>{
 	},0);
 };
 const tt:number = testfunc([1,2,3]);
+
+
+
+
+type Player<E> = {
+	name:string
+	information:E
+};
+const didno:Player<{favFood:string}> = {
+	name:'dino',
+	information:{
+		favFood:'donut'
+	}
+}
+
+
+function PrintOne(a:number[]|string[]):number|string{
+	return a[0];
+}
+
+function PrintOneAny(a:any[]):any{
+	return a[0];
+}
+function PrintOneGeneric<T>(a:T[]):T{
+	return a[0].toUpperCase();
+}
