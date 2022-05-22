@@ -60,6 +60,4 @@ function PrintOne(a:number[]|string[]):number|string{
 function PrintOneAny(a:any[]):any{
 	return a[0];
 }
-function PrintOneGeneric<T>(a:T[]):T{
-	return a[0].toUpperCase();
-}
+
